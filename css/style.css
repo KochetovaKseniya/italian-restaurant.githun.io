@@ -1,0 +1,154 @@
+body{
+	font-family: 'Merienda';
+	font-size: 15px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+	color: gray;
+}
+.nav-item{
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.flag{
+	max-height: 20px;
+	max-width: 20px;
+	margin-top: 10px;
+}
+.nav-link.active{
+	background-color: lightgrey !important;
+}
+
+.reserve-container{
+	position: relative;
+}
+.card {
+	transition: 1s; /* Время эффекта */
+	margin: 1em;
+	width: fit-content;
+	text-align: center;
+	border-radius: 25px;
+}
+.card:hover {
+	transform: scale(1.1); /* Увеличиваем масштаб */
+}
+.card-body{
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+.card-body:hover{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.card-btn {
+	width: fit-content;
+	margin: 0.5em 0;
+}
+.card-img-top{
+	height: 200px;
+	border-radius: 25px 25px 0 0;
+}
+
+@media screen and (max-width : 992px) {
+	.col-lg-4 {
+		display: flex;
+		justify-content: center;
+	}
+	.card-img-top {
+		max-width: 400px;
+	} 
+}
+.reserve-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.reserve-text--title {
+	margin-bottom: 0;
+}	
+.reserve-text--time {
+	margin-bottom: 2em;
+	margin-top: 1em;
+}
+.reserve-text--btn {
+	max-width: 14em;
+}
+.image-reserve{
+	opacity: 0.4;
+	max-height: 100vh;
+	width: 100vw;
+}
+
+.carousel-caption{
+	top: 30%;
+}
+.carousel-card {
+	top: 10%;
+	left: 30%;
+	color: black;
+	opacity: 0.8;
+	width: 25rem;
+	height: fit-content;
+}
+.img-slider{
+	max-height: 100vh;
+}
+
+.navMenu{
+	padding-top: 75px;
+	padding-bottom: 20px;
+	margin-bottom: 2em;
+}
+
+.map {
+	height: 400px;
+	width: 100%;
+}
+.location-content {
+	margin-top: 2em;
+}
+
+@media screen and (max-width : 1920px){
+  
+	.only-mobile{
+  		visibility: hidden;
+    }
+}
+
+@media screen and (max-width : 506px){
+ 
+	.only-mobile {
+  		visibility: visible;
+  	}
+	.reserve-text--title {
+		display: none;
+	}
+	.reserve-text--time {
+		padding-top: 1em;
+	}
+}
+.footer {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-top: 20px;
+}
+.social-icon{
+	font-size: 18px; 
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	padding-top: 20px;
+}
